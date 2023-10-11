@@ -17,7 +17,7 @@ import BookService from "../services/BookService.js";
     }
 
     onMounted(() => {
-        searchBooks();
+         searchBooks();
   });
 
 </script>
@@ -26,8 +26,8 @@ import BookService from "../services/BookService.js";
     <div>
         <h1>Book titles</h1>
         <div>
-            <ul v-for="(item,index) in data.books" :key="index">
-                <li>{{ item }}</li>
+            <ul>
+                <li v-for="(item,index) in data.books" :key="index">{{ item }}</li>
             </ul>
         </div>
     </div>

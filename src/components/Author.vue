@@ -8,7 +8,7 @@ import AuthorService from "../services/AuthorService.js";
 
   const variantcolor = ref("blue");
 // 
-  function searchAuthor() {
+  const searchAuthor = () => {
         variantcolor.value = "black";
         data.authors = null;   
         AuthorService.getAuthors(data.titleForAuthors)
