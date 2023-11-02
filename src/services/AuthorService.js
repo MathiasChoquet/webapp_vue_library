@@ -1,10 +1,11 @@
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:8087/library/author_SQL'; // URL de l'API REST
+const AbsoluteApiUrl = 'http://localhost:8087/library/author_SQL'; // URL de l'API REST
+const ReversApiUrl = '/restbackend/library/author_SQL'; // URL de l'API REST reverse proxy
 
 class AuthorService {
     getAuthors(title){
-        return axios.get(apiUrl,{params: {'title':title}});
+        return axios.get(ReversApiUrl,{params: {'title':title}});
     }
 }
 
