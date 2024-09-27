@@ -1,10 +1,11 @@
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:8087/library/book'; // URL de l'API REST
+const AbsoluteApiUrl = 'http://localhost:8087/library/book'; // URL de l'API REST
+const ReversApiUrl = '/restbackend/library/book'; // URL de l'API REST reverse proxy
 
 class BookService {
     getBooks(){
-        return axios.get(apiUrl);
+        return axios.get(ReversApiUrl);
     }
 }
 
