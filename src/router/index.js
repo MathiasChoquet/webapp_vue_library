@@ -10,8 +10,8 @@ const router = createRouter({
       component: LibraryView
     },
     {
-      path: '/about',
-      name: 'about',
+      path: '/helloworld',
+      name: 'helloworld',
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
