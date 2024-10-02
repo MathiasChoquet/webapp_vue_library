@@ -11,7 +11,7 @@ import AuthorService from "../services/AuthorService.js";
   const searchAuthor = () => {
         variantcolor.value = "black";
         data.authors = null;   
-        AuthorService.getAuthors(data.titleForAuthors)
+        AuthorService.getAuthorsByTitle(data.titleForAuthors)
         .then((response) => {
             data.authors = response.data;
             console.log(response);
